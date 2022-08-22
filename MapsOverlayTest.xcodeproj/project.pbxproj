@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B9D57667A12DDAC33BEC51F /* libPods-MapsOverlayTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C7622687A6B49739E1F13E96 /* libPods-MapsOverlayTest.a */; };
 		F4B9BAB428B401DD0005B7DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B9BAB328B401DD0005B7DF /* AppDelegate.swift */; };
 		F4B9BAB628B401DD0005B7DF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B9BAB528B401DD0005B7DF /* SceneDelegate.swift */; };
 		F4B9BAB828B401DD0005B7DF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B9BAB728B401DD0005B7DF /* ViewController.swift */; };
@@ -16,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		13D6E057FAA81A09FF87E8A6 /* Pods-MapsOverlayTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapsOverlayTest.debug.xcconfig"; path = "Target Support Files/Pods-MapsOverlayTest/Pods-MapsOverlayTest.debug.xcconfig"; sourceTree = "<group>"; };
+		AF245D1626E6CB479206F703 /* Pods-MapsOverlayTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapsOverlayTest.release.xcconfig"; path = "Target Support Files/Pods-MapsOverlayTest/Pods-MapsOverlayTest.release.xcconfig"; sourceTree = "<group>"; };
+		C7622687A6B49739E1F13E96 /* libPods-MapsOverlayTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MapsOverlayTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4B9BAB028B401DD0005B7DF /* MapsOverlayTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapsOverlayTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4B9BAB328B401DD0005B7DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F4B9BAB528B401DD0005B7DF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,17 +35,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B9D57667A12DDAC33BEC51F /* libPods-MapsOverlayTest.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6F72BC3BF34D6E3524794C5D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				13D6E057FAA81A09FF87E8A6 /* Pods-MapsOverlayTest.debug.xcconfig */,
+				AF245D1626E6CB479206F703 /* Pods-MapsOverlayTest.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A520ED96E01620C77029279D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C7622687A6B49739E1F13E96 /* libPods-MapsOverlayTest.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F4B9BAA728B401DD0005B7DF = {
 			isa = PBXGroup;
 			children = (
 				F4B9BAB228B401DD0005B7DF /* MapsOverlayTest */,
 				F4B9BAB128B401DD0005B7DF /* Products */,
+				6F72BC3BF34D6E3524794C5D /* Pods */,
+				A520ED96E01620C77029279D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F4B9BAC428B401E00005B7DF /* Build configuration list for PBXNativeTarget "MapsOverlayTest" */;
 			buildPhases = (
+				D9FC03EBE117047083C4F2AD /* [CP] Check Pods Manifest.lock */,
 				F4B9BAAC28B401DD0005B7DF /* Sources */,
 				F4B9BAAD28B401DD0005B7DF /* Frameworks */,
 				F4B9BAAE28B401DD0005B7DF /* Resources */,
+				97EE01A52A0FE73641E8AF45 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		97EE01A52A0FE73641E8AF45 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MapsOverlayTest/Pods-MapsOverlayTest-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MapsOverlayTest/Pods-MapsOverlayTest-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MapsOverlayTest/Pods-MapsOverlayTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D9FC03EBE117047083C4F2AD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MapsOverlayTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F4B9BAAC28B401DD0005B7DF /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		F4B9BAC528B401E00005B7DF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13D6E057FAA81A09FF87E8A6 /* Pods-MapsOverlayTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -309,6 +379,7 @@
 		};
 		F4B9BAC628B401E00005B7DF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF245D1626E6CB479206F703 /* Pods-MapsOverlayTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
